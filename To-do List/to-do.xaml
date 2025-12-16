@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="To_do_List.to_do"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:To_do_List"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="550">
+    <DockPanel LastChildFill="True">
+        <Button x:Name="Edit_btn" Width="55" DockPanel.Dock="Right" Content="Edit" FontSize="10" Click="Edit_btn_Click"/>
+        <Button x:Name="Completed_btn" Width="55" DockPanel.Dock="Right" FontSize="10" Content="Completed" Click="Completed_btn_Click"/>
+        <TextBox x:Name="todo_txtbox"/>
+    </DockPanel>
+</UserControl>
